@@ -1,141 +1,195 @@
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Helvetica, sans-serif;
-    font-size: 22px;
-    color: seashell; 
-    
-    text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+  font-size: 22px;
+  color: seashell;
+  text-align: center;
 }
 
-h2{
-    font-size: 27px;  
+h2 {
+  font-size: 27px;
 }
 
 html {
-    opacity: 0.9;
-    width: 100%;
-    display: flex;
- 
+  opacity: 0.9;
+  width: 100%;
+  display: flex;
 }
 
 header {
-    position: fixed;
-    left: 0;
-    width: 100%;
-    height: 69px;
-    border-bottom: 1px solid seashell;
-    display: inline-block;
-    background-color: black;
-    z-index: 2;
-    margin: 0;
-    
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 69px;
+  border-bottom: 1px solid seashell;
+  display: inline-block;
+  background-color: black;
+  z-index: 2;
+  margin: 0;
 }
 
-header ul { 
-    float: right;
-    background-color: transparent;
+header ul {
+  float: right;
+  background-color: transparent;
 }
 
 header img {
-    margin: 10px;
-    height: 50px;
-    float: left;
-    
+  margin: 10px;
+  height: 50px;
+  float: left;
 }
 
 header ul li {
-    display: inline-block;
-    line-height: 69px;
-    text-decoration: underline;
-    margin: 0 15px;
-    background-color: transparent;
-    right: 10px;
+  display: inline-block;
+  line-height: 69px;
+  text-decoration: underline;
+  margin: 0 15px;
+  background-color: transparent;
+  right: 10px;
 }
-body{
-    width: 100%;
-    position: relative;
-    justify-content: center;
-    
+body {
+  width: 100%;
+  position: relative;
+  justify-content: center;
 }
-
 
 main {
-    width: 100%;
-    background-color: black;
-    height: auto;
- 
+  width: 100%;
+  background-color: black;
+  height: auto;
 }
 
 #mission {
-    position: relative;
-    width: 1200px;
-    height: 700px;
-    margin: 0 auto;
+  position: relative;
+  width: 1200px;
+  height: 700px;
+  margin: 0 auto;
 }
 
 #mission article {
-    width: 1200px;
-    height: 700px;
-    align-items: center;
-    display: block;
-    
+  width: 1200px;
+  height: 700px;
+  align-items: center;
+  display: block;
 }
 
 #mission article img {
-    width: 1200px;
-    height: 700px;
-    
+  width: 1200px;
+  height: 700px;
 }
 
-#mission article h2 , 
-#mission article h4{
-    align-items: center;
-    text-align: center;
-    position: relative;    
-    bottom: 450px;
-    padding: 10px;
-    margin: 0;
-    background-color: black;
+#mission article h2,
+#mission article h4 {
+  align-items: center;
+  text-align: center;
+  position: relative;
+  bottom: 450px;
+  padding: 10px;
+  margin: 0;
+  background-color: black;
 }
 
 .clearfix {
-    clear: both;
+  clear: both;
 }
 
 #feature-tea {
-    display: block;
-    width: 1000px;
-    margin: 50px auto;
-    height: 700px;
+  display: block;
+  width: 1000px;
+  margin: 50px auto;
+  height: 700px;
 }
 
-#images{
-    display: flex;
-    justify-content:center;
-    flex-wrap: wrap;
-    
+#images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 #images figure img {
-    width: 300px;
-    height: 200px;
-    margin: 10px;
+  width: 300px;
+  height: 200px;
+  margin: 10px;
 }
 
 #feature-tea article {
-    display: block;
+  display: block;
 }
 
 #feature-tea article h4 {
-    margin: 0 auto;
-    font-size: 0.9em;
-
+  margin: 0 auto;
+  font-size: 0.9em;
 }
 #feature-tea article h2 {
-    font-size: 1.5rem;
-    margin: 0 auto;
+  font-size: 1.5rem;
+  margin: 0 auto;
 }
 
+#location {
+  position: relative;
+  width: 1200px;
+  height: 500px;
+  background-position: 0 -60px;
+  background-image: url("../images/img-locations-background.png");
+  background-color: transparent;
+  margin: 0 auto;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.location {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.location h2 {
+  opacity: 0.6;
+  justify-content: center;
+  margin: 15px auto;
+}
+
+.topic {
+  background-color: black;
+  width: 300px;
+  height: 300px;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-around;
+  opacity: 0.9;
+}
+
+.topic:hover {
+  opacity: 1;
+}
+
+.topic h4 {
+  line-height: 75px;
+}
+
+
+#contact {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+ 
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  text-align: left;
+  padding: 20px 20px;
+  background-color: black;
+}
